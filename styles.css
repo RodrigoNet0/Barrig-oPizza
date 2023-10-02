@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: red;
+    color: yellow;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header img{
+    width: 300px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#total {
+    color: green;
+}
+
+#pizza-image-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.pizzas{
+    width: 200px;
+    border-radius: 10px;
+}
