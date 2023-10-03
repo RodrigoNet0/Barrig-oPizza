@@ -9,34 +9,39 @@
 </head>
 <body>
     <main>
-    <div class="phone">
-        <div class="screen">
-            <header>
-                <img src="https://ccmpecdn.s3.sa-east-1.amazonaws.com/imagenspedidoonline/logopizzariabarrigao1.png" alt="pagina-de-pedidos"/>
-            </header>
-            <h1>Monte sua Pizza</h1>
-            <div id="pizza-options">
-                <h2>Tipo de Pizza:</h2>
-                <select id="pizza-type">
-                    <option value="margherita">Margherita</option>
-                    <option value="peperoni">Pepperoni</option>
-                    <option value="vegetariana">Vegetariana</option>
-                </select>
-                <h2>Recheio:</h2>
-                <select id="pizza-topping">
-                    <option value="queijo">Queijo</option>
-                    <option value="tomate">Tomate</option>
-                    <option value="cebola">Cebola</option>
-                </select>
+        <div class="phone">
+            <div class="screen">
+                <header>
+                    <img src="https://ccmpecdn.s3.sa-east-1.amazonaws.com/imagenspedidoonline/logopizzariabarrigao1.png" alt="pagina-de-pedidos"/>
+                </header>
+                <h1>Monte sua Pizza</h1>
+                <div id="pizza-options">
+                    <h2>Tipo de Pizza:</h2>
+                    <select id="pizza-type">
+                        <option value="margherita">Margherita</option>
+                        <option value="peperoni">Pepperoni</option>
+                        <option value="vegetariana">Vegetariana</option>
+                    </select>
+                    <h2>Recheio:</h2>
+                    <select id="pizza-topping">
+                        <option value="queijo">Queijo</option>
+                        <option value="tomate">Tomate</option>
+                        <option value="cebola">Cebola</option>
+                    </select>
+                </div>
+                <h2>Total: R$ <span id="total">0.00</span></h2>
             </div>
-            <h2>Total: R$ <span id="total">0.00</span></h2>
+            <div id="pizza-image-container">
+                <img id="pizza-image" src="./images/pitica.jpg" alt="Pizza Escolhida" class="pizzas">
+            </div>
+            <footer>
+                &copy; 2023 Pizzaria O Barrigão. Todos os direitos reservados.
+            </footer>
         </div>
-        <div id="pizza-image-container">
-            <img id="pizza-image" src="./images/pitica.jpg" alt="Pizza Escolhida" class="pizzas">
-        </div>
-    </div>
+        
+        
+    </main>
     <script src="main.js"></script>
-</main>
 </body>
 
 </html>

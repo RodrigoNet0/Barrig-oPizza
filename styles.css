@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: red;
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 57%, rgba(255,248,0,1) 100%);
     color: yellow;
 }
 
@@ -26,16 +26,20 @@ header img{
 
 h1, h2 {
     text-align: center;
+    font-family: Poppins;
 }
 
 select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    font-family: Poppins;
+    border-radius: 10px;
 }
 
 #total {
-    color: green;
+    color: white;
+    font-family: Poppins;
 }
 
 #pizza-image-container{ 
@@ -48,4 +52,15 @@ select {
 .pizzas{
     width: 200px;
     border-radius: 10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    width: 100%;
+    margin-top: 20px;
 }

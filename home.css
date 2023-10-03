@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins;
     margin: 0;
     padding: 0;
     
@@ -51,6 +51,10 @@ nav a {
 .menu-item {
     margin-bottom: 20px;
 }
+
+
+
+
 
 /*Seta*/
 
