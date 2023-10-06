@@ -1,36 +1,46 @@
-const pizzaType = document.getElementById('pizza-type');
-const pizzaTopping = document.getElementById('pizza-topping');
-const totalDisplay = document.getElementById('total');
-const pizzaImage = document.getElementById('pizza-image');
+let pizzaType = document.getElementById('pizza-type');
+let pizzaTopping = document.getElementById('pizza-topping');
+let totalDisplay = document.getElementById('total');
+let pizzaImage = document.getElementById('pizza-image');
 
-const pizzaPrices = {
-    margherita: 10.00,
-    pepperoni: 12.00,
-    veggie: 11.00
+//preço pizza
+
+let pizzaPrices = {
+    margherita: 30.00,
+    pepperoni: 22.00,
+    veggie: 21.00
 };
 
-const toppingPrices = {
-    queijo: 1.50,
-    tomate: 1.00,
-    cebola: 0.75
+//preço recheio
+
+let toppingPrices = {
+    queijo: 20.50,
+    tomate: 5.00,
+    cebola: 5.00
 };
 
-const pizzaImages = {
+//imagens pizzas
+
+let pizzaImages = {
     margherita: './images/margherita.jpg',
     peperoni: './images/peperoni.webp',
     vegetariana: './images/vegetariana.jpg'
 };
 
+//preço total das pizzas
+
 function updateTotal() {
-    const pizzaPrice = pizzaPrices[pizzaType.value] || 0;
-    const toppingPrice = toppingPrices[pizzaTopping.value] || 0;
-    const total = pizzaPrice + toppingPrice;
+    let pizzaPrice = pizzaPrices[pizzaType.value] || 0;
+    let toppingPrice = toppingPrices[pizzaTopping.value] || 0;
+    let total = pizzaPrice + toppingPrice;
     totalDisplay.textContent = total.toFixed(2);
     updatePizzaImage(pizzaType.value);
 }
 
+//troca de imagem
+
 function updatePizzaImage(pizzaType) {
-    const imageUrl = pizzaImages[pizzaType];
+    let imageUrl = pizzaImages[pizzaType];
     pizzaImage.src = imageUrl;
 }
 

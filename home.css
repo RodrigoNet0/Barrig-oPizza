@@ -3,6 +3,7 @@ body {
     font-family: Poppins;
     margin: 0;
     padding: 0;
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 57%, rgba(255,248,0,1) 100%);
     
 }
 main{
@@ -51,8 +52,13 @@ nav a {
 .menu-item {
     margin-bottom: 20px;
 }
+.text{
+    text-align: center;
+}
 
-
+.nome-pedido{
+    color: white;
+}
 
 
 
@@ -63,9 +69,9 @@ nav a {
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 40px solid #ff0000; 
+    border-top: 40px solid yellow; 
     animation: pulse 1.5s infinite;
-
+    
 }
 
 @keyframes pulse {
@@ -95,9 +101,9 @@ nav a {
       font-family: 'Poppins', sans-serif;
       font-size: 40px;
       color: white;
-      background: #ff0000;
+      background: #fbff00;
       transition: 1s;
-      box-shadow: 6px 6px 0 yellow;
+      box-shadow: 6px 6px 0 rgb(255, 255, 255);
       transform: skewX(-15deg);
   }
   
@@ -181,5 +187,6 @@ nav a {
     text-align: center;
     padding: 8px 0;
     width: 100%;
-    margin-top: 20px;
+    height: 100px;
+    margin-top: 35px;
 }
